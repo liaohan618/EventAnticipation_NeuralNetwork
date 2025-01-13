@@ -13,18 +13,18 @@ So the time frame for our model could be like if we use events from day 0-7 as i
 We chose the company 'Apple Inc.' from 2020-01-01 to 2023-07-10 to be the training set, and 2023-07-10 to 2024-07-21 to be the testing set. The original dataset gives us information in format : date - event name - frequency. We converted training set by using one-hot encoding so that if an event's frequency is equal or greater than a threshold (We chose Median, there is not much difference using Median, Mean, or Mode), this event is indicated 1, otherwise 0. 
 
 ## Multilayer Neural Network
-Input Layer : 1285 (dates) x 119 (events)
-Hidden Layer 1 : 119 x 1000
-Hidden Layer 2 : 1000 x 64
-Output Layer : 64 x 2 (1 or 0)
+- Input Layer : 1285 (dates) x 119 (events)
+- Hidden Layer 1 : 119 x 1000
+- Hidden Layer 2 : 1000 x 64
+- Output Layer : 64 x 2 (1 or 0)
 
 ### Hyperparameter Tuning
 Optimal Parameters (lower loss value preferred) : 
-n_epochs = 250
-batch_size = 5
-hidden_layers = [1000, 64]
-Activation = relu
-Result : Loss <= 0.528
+- n_epochs = 250
+- batch_size = 5
+- hidden_layers = [1000, 64]
+- Activation = relu
+- Result : Loss <= 0.528
 
 Notes 
 1. Loss tends to be stable as number of epoch approaches 500
