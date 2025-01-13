@@ -2,6 +2,8 @@
 
 This is one of the main projects I worked on with my supervisor Alex during my internship at Yukka Lab in Berlin, Germany in the Summer of 2024. Yukka Lab extracts news articles everyday for the companies of interested. For each news article extracted, their model is able to detect the specific 'events' mentioned or implied in this article that are from the list of events we are interested at. In this project, I aim to predict the future events of any company based on the current events we have for this company.
 
+The end product model I built in this project predicted stock price up and stock price down for Q3 2023 to Q3 2024. Based on my model accuracy of approximately 58%, more hyperparameter tuning and optimization would be necessary prior to deployment for Yukka Lab to publish findings/reallocate resources/streamline operations.
+
 ## Example
 For a company, the events for 3 consecutive weeks might look like : 
 - Week 1 : Investigation, Plant Closure
