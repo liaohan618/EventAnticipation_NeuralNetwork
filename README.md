@@ -1,7 +1,6 @@
 # Anticipate Events Based On Events Using Neural Network
 
 This is one of the main projects I worked on with my supervisor Alex during my internship at Yukka Lab in Berlin, Germany in the Summer of 2024. Yukka Lab extracts news articles everyday for the companies of interested. For each news article extracted, their model is able to detect the specific 'events' mentioned or implied in this article that are from the list of events we are interested at. In this project, I aim to predict the future events of any company based on the current events we have for this company.
-By 'events', 
 
 ## Example
 For a company, the events for 3 consecutive weeks might look like : 
@@ -37,7 +36,9 @@ We chose 2 events 'Stock Price Up' and 'Stock Price Down' to evaluate our model 
 
 ## Improvement
 1. We may need to work on finding the optimal length of time frame for input
-2. 
+2. Events detected in an article does not necessarily mean it is happening already, or it is actually happening sometimes
+3. We could add more companies of interest for training and evaluation
+4. Try LSTS model that allows wider time frame and also use sequence of data instead of individual data points
 
 
 
